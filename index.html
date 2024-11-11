@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios HTML5 y JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ejercicios HTML5 y JavaScript</h1>
+    <table>
+        <!-- Ejercicio 1: Determinar si un número es positivo o negativo -->
+        <tr id="jercicio1">
+            <td><h2>Ejercicio 1</h2></td>
+            <td>
+                <label for="numero1">Ingresa un número:</label>
+                <input type="number" id="numero1">
+                <button onclick="determinarPositivoNegativo('numero1', 'resultado1')">Determinar</button>
+                <p id="resultado1"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 2: Verificar si un número es par o impar -->
+        <tr id="jercicio2">
+            <td><h2>Ejercicio 2</h2></td>
+            <td>
+                <label for="numero2">Ingresa un número:</label>
+                <input type="number" id="numero2">
+                <button onclick="esParOImpar('numero2', 'resultado2')">Verificar</button>
+                <p id="resultado2"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 3: Calcular el cuadrado de un número -->
+        <tr id="jercicio3">
+            <td><h2>Ejercicio 3</h2></td>
+            <td>
+                <label for="numero3">Ingresa un número:</label>
+                <input type="number" id="numero3">
+                <button onclick="calcularCuadrado('numero3', 'resultado3')">Calcular</button>
+                <p id="resultado3"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 4: Calcular el área de un círculo -->
+        <tr id="jercicio4">
+            <td><h2>Ejercicio 4</h2></td>
+            <td>
+                <label for="radio">Ingresa el radio:</label>
+                <input type="number" id="radio">
+                <button onclick="calcularAreaCirculo('radio', 'resultado4')">Calcular</button>
+                <p id="resultado4"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 5: Convertir Celsius a Fahrenheit -->
+        <tr id="jercicio5">
+            <td><h2>Ejercicio 5</h2></td>
+            <td>
+                <label for="celsius">Ingresa grados Celsius:</label>
+                <input type="number" id="celsius">
+                <button onclick="convertirCelsiusAFahrenheit('celsius', 'resultado5')">Convertir</button>
+                <p id="resultado5"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 6: Generar un número aleatorio entre 1 y 100 -->
+        <tr id="jercicio6">
+            <td><h2>Ejercicio 6</h2></td>
+            <td>
+                <button onclick="generarNumeroAleatorio('resultado6')">Generar número</button>
+                <p id="resultado6"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 7: Contar el número de caracteres en un texto -->
+        <tr id="jercicio7">
+            <td><h2>Ejercicio 7</h2></td>
+            <td>
+                <label for="texto7">Ingresa un texto:</label>
+                <input type="text" id="texto7">
+                <button onclick="contarCaracteres('texto7', 'resultado7')">Contar</button>
+                <p id="resultado7"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 8: Sumar dos números -->
+        <tr id="jercicio8">
+            <td><h2>Ejercicio 8</h2></td>
+            <td>
+                <label for="num1">Número 1:</label>
+                <input type="number" id="num1">
+                <label for="num2">Número 2:</label>
+                <input type="number" id="num2">
+                <button onclick="sumarNumeros('num1', 'num2', 'resultado8')">Sumar</button>
+                <p id="resultado8"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 9: Calcular la edad a partir del año de nacimiento -->
+        <tr id="jercicio9">
+            <td><h2>Ejercicio 9</h2></td>
+            <td>
+                <label for="anioNacimiento">Año de nacimiento:</label>
+                <input type="number" id="anioNacimiento">
+                <button onclick="calcularEdad('anioNacimiento', 'resultado9')">Calcular Edad</button>
+                <p id="resultado9"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 10: Convertir metros a kilómetros -->
+        <tr id="jercicio10">
+            <td><h2>Ejercicio 10</h2></td>
+            <td>
+                <label for="metros">Ingresa metros:</label>
+                <input type="number" id="metros">
+                <button onclick="convertirMetrosAKilometros('metros', 'resultado10')">Convertir</button>
+                <p id="resultado10"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 11: Verificar si un texto es un palíndromo -->
+        <tr id="jercicio11">
+            <td><h2>Ejercicio 11</h2></td>
+            <td>
+                <label for="palindromoTexto">Ingresa un texto:</label>
+                <input type="text" id="palindromoTexto">
+                <button onclick="verificarPalindromo('palindromoTexto', 'resultado11')">Verificar</button>
+                <p id="resultado11"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 12: Mostrar el día actual de la semana -->
+        <tr id="jercicio12">
+            <td><h2>Ejercicio 12</h2></td>
+            <td>
+                <button onclick="mostrarDiaSemana('resultado12')">Mostrar Día</button>
+                <p id="resultado12"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 13: Encontrar el número mayor de tres números -->
+        <tr id="jercicio13">
+            <td><h2>Ejercicio 13</h2></td>
+            <td>
+                <label for="num13_1">Número 1:</label>
+                <input type="number" id="num13_1">
+                <label for="num13_2">Número 2:</label>
+                <input type="number" id="num13_2">
+                <label for="num13_3">Número 3:</label>
+                <input type="number" id="num13_3">
+                <button onclick="encontrarMayor('num13_1', 'num13_2', 'num13_3', 'resultado13')">Encontrar Mayor</button>
+                <p id="resultado13"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 14: Convertir texto a mayúsculas -->
+        <tr id="jercicio14">
+            <td><h2>Ejercicio 14</h2></td>
+            <td>
+                <label for="texto14">Ingresa un texto:</label>
+                <input type="text" id="texto14">
+                <button onclick="convertirMayusculas('texto14', 'resultado14')">Convertir</button>
+                <p id="resultado14"></p>
+            </td>
+        </tr>
+
+        <!-- Ejercicio 15: Calcular factorial de un número -->
+        <tr id="jercicio15">
+            <td><h2>Ejercicio 15</h2></td>
+            <td>
+                <label for="factorialNum">Ingresa un número:</label>
+                <input type="number" id="factorialNum">
+                <button onclick="calcularFactorial('factorialNum', 'resultado15')">Calcular Factorial</button>
+                <p id="resultado15"></p>
+            </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
